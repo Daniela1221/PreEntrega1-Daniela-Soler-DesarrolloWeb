@@ -1,0 +1,245 @@
+/* Fuente que se utilizará en el proyecto */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sofia&display=swap');
+
+/* limpia todos los elementos del navegador que señalemos */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fuentes definidas para h1, h2, p */
+h1 {
+    font-family: 'Sofia', cursive;
+    font-size: 5em;
+}
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 3em;
+    text-align: center;
+}
+p{
+    font-family: 'PT Serif', serif;
+    margin-left: 2em;
+}
+
+/* Colores */
+.blanco {
+    color: white;
+}
+.bloqueCeleste {
+    display: flex;
+    background-color: rgb(41, 216, 235);
+}
+.bloqueVerde {
+    display: flex;
+    background-color: rgb(11, 255, 11);
+}
+
+/* Logo */
+.tamanioLogo {
+    height: 10rem;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Header */
+ul li {
+    list-style: none;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(24, 17, 142);
+    height: 3em;
+}
+
+
+header ul a {
+    text-decoration: none;
+    margin-right: 2em;
+}
+
+/* Clase para imágenes de portada */
+.imagenPortada {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+}
+
+/* Superposición de logo y título con imagen portada */
+.contenedor {
+    height: 60rem;
+    width: 76.5rem;
+}
+
+.logoSuperponer {
+    position: absolute;
+    z-index: 1;
+}
+
+.posicionZ {
+    z-index: 1;
+}
+
+header div h1 {
+    right: 5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 16rem;
+    color: rgb(7, 38, 124);
+    -webkit-text-stroke-width: 0.0005rem;
+    -webkit-text-stroke-color: aliceblue;
+}
+
+header div p {
+    position: absolute;
+    z-index: 1;
+    bottom: 12rem;
+    background-color: rgba(255, 255, 255, 0.559);
+    margin-right: 2rem;
+    border-radius: 0.5em;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(37, 35, 148);
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estiloNav {
+    margin-left: 3em;
+}
+
+.estiloRedesSociales {
+    margin-left: 3em;
+}
+
+.tamanioLogoRedes {
+    height: 2em;
+}
+
+.alineaIconoLista {
+    display: flex;
+    flex-direction: row;
+}
+
+footer p {
+    margin-left: 1em;
+}
+
+footer li img {
+    padding-bottom: 0.5em;
+}
+
+.interlineadoMedio {
+    line-height: 0.5rem;
+}
+
+/* Contenido Genérico */
+/* Alineamiento de contenido */
+.alinearContenidoFila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 7rem;
+    padding: 1rem;
+}
+
+.alinearContenidoColumna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrarContenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+}
+
+/* Tamaño imágenes */
+.tamanioImagenMediana {
+    height: 20rem;
+}
+
+.tamanioImagenPequeña {
+    height: 10rem;
+    align-self: center;
+}
+
+.imagenPantallaCompleta {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Estilos Mapa */
+.alinearContenidoFilaEstrecho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-bottom: 7rem;
+}
+
+/* Texto en general */
+.textoContenido {
+    text-align: justify;
+}
+
+.espaciadoSubtitulo {
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
+
+.espaciadoTexto {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+/* Estilo Botones */
+main a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.formaBoton {
+    display: flex;
+    width: fit-content;
+    margin-top: 0.5em;
+    background-color: rgb(36, 56, 186);
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+}
+
+.parrafoMargen {
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 3rem;
+}
+
+.parrafoMargenGrande {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-bottom: 3rem;
+}
+
+.margenLateral {
+    margin-inline: 0.5em;
+}
+
