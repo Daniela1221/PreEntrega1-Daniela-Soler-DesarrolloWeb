@@ -1,15 +1,12 @@
 /* Fuente que se utilizará en el proyecto */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sofia&display=swap');
 
-/* limpia todos los elementos del navegador que señalemos */
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 /* Fuentes definidas para h1, h2, p */
+body {
+    font-family: 'Lora', serif;
+    /* font-size: 3em; */
+    /* text-align: center; */
+}
 h1 {
     font-family: 'Sofia', cursive;
     font-size: 5em;
@@ -25,8 +22,9 @@ p{
 }
 
 /* Colores */
-.blanco {
+.colorBlanco {
     color: white;
+    text-decoration: none;
 }
 .bloqueCeleste {
     display: flex;
@@ -36,6 +34,22 @@ p{
     display: flex;
     background-color: rgb(11, 255, 11);
 }
+.fondoAzul {
+    background-color: rgb(0, 0, 212);
+}
+.fondoRosa {
+    background-color: rgb(72, 72, 252);
+    border-radius: 8px;
+}
+.link:hover {
+    border: solid 1px white;
+    border-radius: 8px;
+}
+.espacioEntreObjetos {
+    gap: 10px;
+}
+
+
 
 /* Logo */
 .tamanioLogo {
@@ -45,24 +59,7 @@ p{
     margin-bottom: 1em;
 }
 
-/* Header */
-ul li {
-    list-style: none;
-}
 
-header nav ul {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    background-color: rgb(24, 17, 142);
-    height: 3em;
-}
-
-
-header ul a {
-    text-decoration: none;
-    margin-right: 2em;
-}
 
 /* Clase para imágenes de portada */
 .imagenPortada {
@@ -109,7 +106,7 @@ header div p {
 
 /* Footer */
 footer {
-    background-color: rgb(37, 35, 148);
+    background-color: rgb(67, 177, 221);
     height: 13rem;
     display: flex;
     justify-content: center;
