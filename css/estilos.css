@@ -148,7 +148,7 @@ footer ul a {
 }
 
 .tamanioLogoRedes {
-    height: 2em;
+    max-height: 2em;
 }
 
 .alineaIconoLista {
