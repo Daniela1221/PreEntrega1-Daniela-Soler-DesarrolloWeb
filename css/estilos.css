@@ -1,6 +1,13 @@
 /* Fuente que se utilizará en el proyecto */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sofia&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /* Fuentes definidas para h1, h2, p */
 body {
     font-family: 'Lora', serif;
@@ -19,6 +26,7 @@ h2 {
 p{
     font-family: 'PT Serif', serif;
     margin-left: 2em;
+    text-align: justify;
 }
 
 /* Colores */
@@ -35,7 +43,10 @@ p{
 .fondoAzul {
     background-color: rgb(0, 0, 212);
 }
-.fondoRosa {
+.fondoNegro {
+    background-color: black;
+}
+.fondoVioleta {
     background-color: rgb(72, 72, 252);
     border-radius: 8px;
 }
@@ -59,6 +70,7 @@ p{
     margin-left: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
+    width: auto;
 }
 
 
@@ -99,6 +111,7 @@ p{
     color: rgb(25, 61, 158);
     -webkit-text-stroke-width: 0.05rem;
     -webkit-text-stroke-color: aliceblue;
+    text-align: end;
 }
 
 /* header div h1 {
@@ -118,6 +131,58 @@ header div p {
     background-color: rgba(255, 255, 255, 0.559);
     margin-right: 2rem;
     border-radius: 0.5em;
+} */
+
+
+@media screen and (max-width: 767px) {
+    header img {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    header h1 {
+        position: relative;
+        font-size: 3em;
+        text-align: start;
+    }
+    header p {
+        position: relative;
+        font-size: 1em;
+        text-align: start;
+        padding: 0;
+        margin: 0;
+        text-align: justify;
+    } 
+    .posicionZAlto {
+        position: relative;
+        z-index: 10;
+    }
+    .responsiveSm {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .ajustarH1 {
+        -webkit-text-stroke-width: 0.01rem;
+    }
+    .centrarImg-sm {
+        width: 11.5rem;
+        align-self: center;
+    }
+    .centrarTexto-sm {
+        align-self: center;
+        width: auto;
+    }
+    .ancho {
+        width: auto;
+    }
+}
+
+/* @media (min-width: 601px) {
+    header section {
+        display: block;
+    }
 } */
 
 /* Footer */
@@ -209,6 +274,7 @@ footer li img {
 /* Tamaño imágenes */
 .tamanioImagenMediana {
     height: 20rem;
+    object-fit: cover;
 }
 
 .tamanioImagenPequeña {
