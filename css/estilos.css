@@ -269,10 +269,26 @@ footer p {
     align-self: center;
 }
 
+.tamanioMapa {
+    height: 15rem;
+}
+
 .imagenPantallaCompleta {
     max-width: 100%;
     width: auto;
     height: auto;
+}
+
+/* Formato responsivo imagenes */
+@media (max-width: 767px) {
+    .tamanioImagenMediana {
+        width: 400px;
+    }
+    .tamanioMapa {
+        width: 400px;
+        height: 20rem;
+    }
+
 }
 
 /* Estilos Mapa */
