@@ -201,6 +201,22 @@ p{
     }
 }
 
+/* Header de galeria.html */
+.imgFondoGaleria {
+    background: url(../assets/img/galeria_portada.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media (max-width: 767px) {
+    .imgFondoGaleria {
+        height: 50vh;
+    }
+}
+
 /* Footer */
 footer {
     background-color: rgb(0, 0, 212);
@@ -295,6 +311,15 @@ footer p {
 .tamanioImagenPequeña {
     height: 10rem;
     align-self: center;
+    width: 11rem;
+}
+
+@media (max-width: 767px) {
+    .tamanioImagenPequeña {
+        width: 20rem;
+        height: 15rem;
+    }
+    
 }
 
 .tamanioMapa {
