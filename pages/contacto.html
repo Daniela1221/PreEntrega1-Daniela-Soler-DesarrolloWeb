@@ -58,52 +58,60 @@
                     </p>
                 </div>
             </section>
-            <section class="parrafoMargenGrande">
+            <section class="container d-flex justify-content-center ">
                 <div>
-                    <form action="404.html" method="post">
-                        <div class="espaciadoTexto">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                    <form action="404.html" method="post" class="anchoFormulario">
+                        <legend class="text-center espaciadoSuperior">Ingrese sus Datos</legend>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Nombre</span>
+                            <input type="text" class="form-control" placeholder="Inserte su nombre..." aria-label="Nombre" aria-describedby="basic-addon1">
                         </div>
-                        <div class="espaciadoTexto">
-                            <label for="apellido">Apellido</label>
-                            <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Apellido</span>
+                            <input type="text" class="form-control" placeholder="Inserte su apellido..." aria-label="Apellido" aria-describedby="basic-addon1">
                         </div>
-                        <div class="espaciadoTexto">
-                            <label for="email">Correo</label>
-                            <input type="text" name="email" id="email">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">E-mail</span>
+                            <input type="email" class="form-control" placeholder="correo@ejemplo.com" aria-label="Correo" aria-describedby="basic-addon1">
                         </div>
-                        <fieldset> 
-                            <legend>Tipo de Consulta</legend>
-                            <label class="margenLateral" for="catalogo">Catálogo FotoMural
-                                <input id="catalogo" name="consulta" type="radio" value="catalogos" checked >
-                            </label>
-                            <label class="margenLateral" for="personaliza">Personaliza tu FotoMural
-                                <input id="personaliza" name="consulta" type="radio" value="personalizar">
-                            </label>
-                            <label class="margenLateral" for="crea">Crea un FotoMural
-                                <input id="crea" name="consulta" type="radio" value="crear">
-                            </label>
-                            <label class="margenLateral" for="otro">Otro
-                                <input id="otro" name="consulta" type="radio" value="otros">
-                            </label>
+                        <fieldset class="text-center"> 
+                            <legend class="espaciadoSuperior">Tipo de Consulta</legend>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                                <label class="form-check-label" for="inlineRadio1">Catálogo FotoMural</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Personaliza tu FotoMural</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                <label class="form-check-label" for="inlineRadio3">Crea un FotoMural</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                <label class="form-check-label" for="inlineRadio4">Otro</label>
+                            </div>
                         </fieldset>
-                        <div class="espaciadoTexto">
-                            <p>Falta subida de imagen por parte del usuario</p>
+                        <div class="mb-3 text-center">
+                            <legend class="espaciadoSuperior">Seleccionar Imágenes Referenciales</legend>
+                            <label for="formFileMultiple" class="form-label"></label>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple>
                         </div>
-                        <div class="alinearContenidoColumna">
-                            <label for="mensaje">Comentarios</label>
-                            <textarea name="mensaje" id="mensaje" cols="60" rows="10" placeholder="Ingrese su consulta"></textarea>
+                        <div class="mb-3 text-center">
+                            <legend class="espaciadoSuperior">Comentarios</legend>
+                            <label for="exampleFormControlTextarea1" class="form-label"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
                         </div>
-                        <div class="centrarContenido">
-                            <input class="margenLateral bloqueVerde" type="submit" id="enviar" name="enviar" value="Enviar Solicitud">
-                            <input class="margenLateral bloqueCeleste" type="reset" id="limpiar" name="limpiar" value="Limpiar Formulario">
+                        <div class="btn-group d-flex justify-content-center espaciadoInferior" role="group" aria-label="Basic outlined example">
+                            <button type="reset" class="botonFormulario1">Limpiar Formulario</button>
+                            <button type="submit" class="botonFormulario2">Enviar Solicitud</button>
                         </div>
                     </form>
                 </div>
             </section>
         </main>
-        <footer class="container-fluid espaciadoChico">
+        <footer class="container-fluid espaciadoChico espaciadoSuperior">
             <img class="tamanioLogo col-md-2 col-sm-4" src="../assets/img/logo.png" alt="Logo Mural de Sueños">
             <nav class="col-md-2 col-sm-4">
                 <ul class="text-center">

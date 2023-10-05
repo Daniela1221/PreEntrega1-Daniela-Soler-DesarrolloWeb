@@ -268,6 +268,11 @@ footer ul li {
 .espaciadoChico {
     padding: 0.1em;
 }
+
+.espaciadoSuperior {
+    padding-top: 2em;
+}
+
 .espaciadoInferior {
     padding-bottom: 3rem;
 }
@@ -294,23 +299,6 @@ footer p {
 
 /* Contenido Genérico */
 /* Alineamiento de contenido */
-.alinearContenidoFila {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    margin-bottom: 7rem;
-    padding: 1rem;
-}
-
-.alinearContenidoColumna {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .centrarContenido {
     display: flex;
     align-items: center;
@@ -328,13 +316,6 @@ footer p {
     height: 10rem;
     align-self: center;
     width: 11rem;
-}
-
-@media (max-width: 767px) {
-    .tamanioImagenPequeña {
-        width: 20rem;
-        height: 15rem;
-    }
 }
 
 .tamanioMapa {
@@ -356,17 +337,11 @@ footer p {
         width: 400px;
         height: 20rem;
     }
+    .tamanioImagenPequeña {
+        width: 20rem;
+        height: 15rem;
+    }
 
-}
-
-/* Estilos Mapa */
-.alinearContenidoFilaEstrecho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    margin-bottom: 7rem;
 }
 
 /* Texto en general */
@@ -399,6 +374,44 @@ main a{
     padding: 0.5em 1em;
 }
 
+.botonFormulario1 {
+    display: inline;
+    color: rgb(36, 56, 186);
+    border: 1px solid;
+    border-color: rgb(36, 56, 186);
+    border-radius: 1em;
+    background-color: transparent;
+    padding: 0.5em;
+    flex: 1 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.botonFormulario1:hover {
+    color: black;
+    background-color: rgb(248, 224, 5);
+    border-color: rgb(34, 36, 51);
+}
+
+.botonFormulario2 {
+    display: inline;
+    color: rgb(36, 56, 186);
+    border: 1px solid;
+    border-color: rgb(36, 56, 186);
+    border-radius: 1em;
+    background-color: transparent;
+    padding: 0.5em;
+    flex: 1 1;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.botonFormulario2:hover {
+    color: black;
+    background-color: rgb(17, 201, 17);
+    border-color: rgb(34, 36, 51);
+}
+
 .parrafoMargen {
     margin-left: 7rem;
     margin-right: 7rem;
@@ -422,3 +435,17 @@ main a{
     margin-inline: 0.5em;
 }
 
+.anchoFormulario {
+    width: 100vh;
+    object-fit:cover;
+}
+
+@media (max-width: 767px) {
+    .anchoFormulario {
+        width: initial;
+    }
+    .parrafoMargenGrande {
+        margin: 0;
+    }
+    
+}
