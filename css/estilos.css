@@ -331,10 +331,16 @@ footer p {
     height: 15rem;
 }
 
+.fondoError404 {
+    background: url(../assets/img/fondo-error.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .imagenPantallaCompleta {
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    height: 100vh;
+    width: 100vh;
 }
 
 /* Formato responsivo imagenes */
