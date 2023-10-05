@@ -179,13 +179,27 @@ p{
     background-position: center;
     background-attachment: fixed;
 }
-
 @media (max-width: 767px) {
     .imgFondoNosotros {
         height: 50vh;
     }
 }
 
+/* Header de servicios.html */
+.imgFondoServicios {
+    background: url(../assets/img/servicios_portada.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media (max-width: 767px) {
+    .imgFondoServicios {
+        height: 50vh;
+    }
+}
 
 /* Footer */
 footer {
