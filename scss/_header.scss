@@ -1,0 +1,134 @@
+/* Barra de navegación */
+.link:hover {
+    border: solid 1px map-get($mapa-colores, color-blanco);
+    border-radius: 8px;
+}
+
+/* H1 que comparte todos los header */
+.ajustarH1 {
+    color: map-get($mapa-colores, color-azul-oscuro);
+    -webkit-text-stroke-width: 0.05rem;
+    -webkit-text-stroke-color: map-get($mapa-colores, color-blanco-borde);
+    text-align: end;
+}
+
+/* Header index.html */
+.carousel {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    .carousel-item {
+        height: 90vh;
+        width: 100%;
+        .imgAdaptada {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }        
+    }
+}
+
+
+/* Formato responsivo para el header de index.html */
+@media screen and (max-width: 767px) {
+    header {
+        .responsiveSm {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .carousel-item {
+                height: auto;
+                img {
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        .centrarImg-sm {
+            width: 11.5rem;
+            align-self: center;
+        }
+        .centrarTexto-sm {
+            align-self: center;
+            width: auto;
+            h1 {
+                position: relative;
+                font-size: 3em;
+                text-align: start;
+                .ajustarH1 {
+                    -webkit-text-stroke-width: 0.01rem;
+                }
+            }
+            p {
+                position: relative;
+                font-size: 1em;
+                text-align: start;
+                padding: 0;
+                margin: 0;
+                text-align: justify;
+            } 
+        }
+        .ancho {
+            width: auto;
+        }
+    }
+    .posicionZAlto {
+        position: relative;
+        z-index: 10;
+    }
+    
+    
+}
+
+
+/* Header de nosotros.html */
+.imgFondoNosotros {
+    background: url(../assets/img/portada_nosotros.jpg);
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media (max-width: 767px) {
+    .imgFondoNosotros {
+        height: 50vh;
+    }
+}
+
+/* Header de servicios.html */
+.imgFondoServicios {
+    @extend .imgFondoNosotros;
+    background: url(../assets/img/servicios_portada.jpg);
+}
+@media (max-width: 767px) {
+    .imgFondoServicios {
+        height: 50vh;
+    }
+}
+
+/* Header de galeria.html */
+.imgFondoGaleria {
+    @extend .imgFondoNosotros;
+    background: url(../assets/img/galeria_portada.jpg);
+}
+@media (max-width: 767px) {
+    .imgFondoGaleria {
+        height: 50vh;
+    }
+}
+
+/* Header de contacto.html */
+.imgFondoContacto {
+    @extend .imgFondoNosotros;
+    background: url(../assets/img/contacto_portada.jpg);
+}
+@media (max-width: 767px) {
+    .imgFondoContacto {
+        height: 50vh;
+    }
+}
+

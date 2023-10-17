@@ -1,0 +1,46 @@
+/* Footer */
+footer {
+    background-color: map-get($mapa-colores , color-nav);
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    .espaciadoChico {
+        padding: 0.1em;
+    }
+    .tamanioRedes {
+        width: 10em;
+    }
+    p {
+        margin-left: 1em;
+    }
+    ul {
+        list-style: none;
+        max-width: 60%;
+        padding: 10%;
+        margin: 1% 1% 5% 10%;
+        li {
+            align-content: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            p {
+                margin-left: 1em;
+            }
+            a {
+                text-decoration: none;
+                text-decoration-color: map-get($mapa-colores, color-blanco );
+            }
+            .tamanioLogoRedes {
+                max-height: 2em;
+            }
+            .colorBlancoFooter {
+                color: map-get($mapa-colores, color-blanco );
+                text-decoration: none;
+                &:hover {
+                    color:map-get($mapa-colores, color-celeste );
+                }
+            }
+        }
+    }
+}

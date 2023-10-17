@@ -1,0 +1,22 @@
+$color-nav: rgb(0, 0, 212);
+$color-posicion-nav: rgb(72, 72, 252);
+$color-blanco-transparente: rgba(255, 255, 255, 0.582);
+$color-blanco: white;
+
+$mapa-colores : (
+    "color-nav": $color-nav,
+    "color-posicion-nav": rgb(72, 72, 252),
+    "color-blanco-transparente": rgba(255, 255, 255, 0.582),
+    "color-blanco":white,
+    "color-celeste":aqua,
+    "color-azul-oscuro":rgb(25, 61, 158),
+    "color-blanco-borde":  aliceblue,
+    "color-azul-oscuro-boton": rgb(36, 56, 186),
+    "color-azul-claro-boton": rgb(48, 74, 248),
+    "color-negro-transparente":rgba(0,0,0,0.64),
+    "transparente": transparent,
+    "negro": black,
+    "casi-negro": rgb(34, 36, 51),
+    "amarillo": rgb(248, 224, 5),
+    "verde": rgb(17, 201, 17),
+)

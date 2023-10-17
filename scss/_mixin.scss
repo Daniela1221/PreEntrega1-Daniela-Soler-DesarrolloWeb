@@ -1,0 +1,16 @@
+@mixin margenes ($left,$right,$top,$bottom){
+    margin-left: $left;
+    margin-right: $right;
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin margenvertical ($top,$bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin tamaniocajacontenido ($alto,$ancho){
+    height: $alto;
+    width: $ancho;
+}

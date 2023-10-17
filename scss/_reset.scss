@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fuentes definidas para h1, h2, p */
+body {
+    font-family: 'Lora', serif;
+    /* font-size: 3em; */
+    /* text-align: center; */
+}
+h1 {
+    font-family: 'Sofia', cursive;
+    font-size: 5em;
+}
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 3em;
+    text-align: center;
+}
+p{
+    font-family: 'PT Serif', serif;
+    margin-left: 2em;
+    text-align: justify;
+}

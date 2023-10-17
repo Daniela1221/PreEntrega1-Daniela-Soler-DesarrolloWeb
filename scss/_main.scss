@@ -1,0 +1,126 @@
+/* main general para todas las páginas */
+main {
+    /* PROPIEDADES PARA TODOS LOS MAIN */
+    a {
+        text-decoration: none;
+        color: map-get($mapa-colores, color-blanco-borde);
+    }
+    .formaBoton {
+        display: flex;
+        width: fit-content;
+        margin-top: 0.5em;
+        background-color: map-get($mapa-colores, color-azul-oscuro-boton);
+        border-radius: 0.5em;
+        padding: 0.5em 1em;
+        &:hover {
+            background-color: map-get($mapa-colores, color-azul-claro-boton);
+            color: map-get($mapa-colores, color-blanco);
+            box-shadow: 10px 10px 21px -7px map-get($mapa-colores, color-negro-transparente);
+        }
+    }
+    .espaciadoInferior {
+        padding-bottom: 3rem;
+    }
+
+    /* Formatos textos */
+    .textoContenido {
+        text-align: justify;
+    }
+    .espaciadoSubtitulo {
+        @include margenvertical(4em,4em);
+    }
+    .espaciadoTexto {
+        @include margenvertical(1em,1em);
+    }
+    .parrafoMargen {
+        @include margenes(7rem,7rem,0,3rem);
+    }
+
+    .parrafoMargenGrande {
+        @include margenes(15rem,15rem,3rem,3rem);
+    }
+
+    /* Tamaño imágenes */
+    .tamanioImagenMediana {
+        @include tamaniocajacontenido(20rem,auto);
+        object-fit: cover;
+    }
+    .tamanioImagenPequeña {
+        @include tamaniocajacontenido(10rem,11rem);
+        align-self: center;
+    }
+    .tamanioMapa {
+        @include tamaniocajacontenido(15rem,auto);
+    }
+
+    /* SOLO PARA contacto.html */
+    .anchoFormulario {
+        @include tamaniocajacontenido(auto,100vh);
+        object-fit:cover;
+        .botonFormulario1 {
+            display: inline;
+            color: map-get($mapa-colores, color-azul-oscuro-boton);
+            border: 1px solid;
+            border-color: map-get($mapa-colores, color-azul-oscuro-boton);
+            border-radius: 1em;
+            background-color: map-get($mapa-colores, transparente);
+            padding: 0.5em;
+            flex: 1 1;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            &:hover {
+                color: map-get($mapa-colores, negro);
+                background-color: map-get($mapa-colores, amarillo);
+                border-color: map-get($mapa-colores, casi-negro);
+            }
+        }
+        .botonFormulario2 {
+            @extend .botonFormulario1;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            &:hover {
+                color: map-get($mapa-colores, negro);
+                background-color: map-get($mapa-colores, verde);
+                border-color: map-get($mapa-colores, casi-negro);
+            }
+        }
+    }
+
+    /* SOLO PARA 404.htm */
+    .fondoError404 {
+        background: url(../assets/img/fondo-error.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .imagenPantallaCompleta {
+            @include tamaniocajacontenido(100vh,100%);
+        }
+    }
+}
+
+/* FORMATO RESPONSIVE */
+@media (max-width: 767px) {
+    main {
+        /* Formatos textos */
+        .parrafoMargen {
+            margin: 0;   
+        } 
+        .anchoFormulario {
+            width: initial;
+        }
+        .parrafoMargenGrande {
+            margin: 0;
+        }
+
+        /* Formato imágenes */
+        .tamanioImagenMediana {
+            @include tamaniocajacontenido(auto,400px);
+        }
+        .tamanioMapa {
+            @include tamaniocajacontenido(20rem,400px);
+        }
+        .tamanioImagenPequeña {
+            @include tamaniocajacontenido(15rem,20rem);
+        }
+    }
+}
