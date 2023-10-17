@@ -35,7 +35,6 @@ main {
     .parrafoMargen {
         @include margenes(7rem,7rem,0,3rem);
     }
-
     .parrafoMargenGrande {
         @include margenes(15rem,15rem,3rem,3rem);
     }
