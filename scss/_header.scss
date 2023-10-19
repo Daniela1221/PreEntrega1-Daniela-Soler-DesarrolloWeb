@@ -85,7 +85,7 @@
 
 /* Header de nosotros.html */
 .imgFondoNosotros {
-    background: url(../assets/img/portada_nosotros.jpg);
+    background: url(../assets/img/nosotros/portada_nosotros-1920.webp);
     background-repeat: no-repeat;
     height: 90vh;
     position: relative;
@@ -96,39 +96,43 @@
 @media (max-width: 767px) {
     .imgFondoNosotros {
         height: 50vh;
+        background: url(../assets/img/nosotros/portada_nosotros-400.webp);
     }
 }
 
 /* Header de servicios.html */
 .imgFondoServicios {
     @extend .imgFondoNosotros;
-    background: url(../assets/img/servicios_portada.jpg);
+    background: url(../assets/img/servicios/servicios_portada-1920.webp);
 }
 @media (max-width: 767px) {
     .imgFondoServicios {
         height: 50vh;
+        background: url(../assets/img/servicios/servicios_portada-400.webp);
     }
 }
 
 /* Header de galeria.html */
 .imgFondoGaleria {
     @extend .imgFondoNosotros;
-    background: url(../assets/img/galeria_portada.jpg);
+    background: url(../assets/img/galeria/galeria_portada-1920.webp);
 }
 @media (max-width: 767px) {
     .imgFondoGaleria {
         height: 50vh;
+        background: url(../assets/img/galeria/galeria_portada-400.webp);
     }
 }
 
 /* Header de contacto.html */
 .imgFondoContacto {
     @extend .imgFondoNosotros;
-    background: url(../assets/img/contacto_portada.jpg);
+    background: url(../assets/img/contacto/contacto_portada-1920.webp);
 }
 @media (max-width: 767px) {
     .imgFondoContacto {
         height: 50vh;
+        background: url(../assets/img/contacto/contacto_portada-400.webp);
     }
 }
 
