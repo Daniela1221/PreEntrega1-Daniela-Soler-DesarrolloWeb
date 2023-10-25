@@ -111,7 +111,6 @@ main {
         .parrafoMargenGrande {
             margin: 0;
         }
-
         /* Formato imágenes */
         .tamanioImagenMediana {
             @include tamaniocajacontenido(auto,400px);
