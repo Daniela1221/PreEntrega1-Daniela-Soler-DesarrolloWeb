@@ -86,15 +86,8 @@ main {
     }
 
     /* SOLO PARA 404.htm */
-    .fondoError404 {
-        background: url(../assets/img/error404/fondo-error-1920.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        @include tamaniocajacontenido(100vh,100%);
-        .imagenPantallaCompleta {
-            object-fit: contain;
-        }
+    .imagenPantallaCompleta {
+        object-fit: contain;
     }
 }
 
@@ -120,11 +113,6 @@ main {
         }
         .tamanioImagenPequeña {
             @include tamaniocajacontenido(15rem,20rem);
-        }
-
-        /* 404.html */
-        .fondoError404 {
-            background: url(../assets/img/error404/fondo-error-400.webp);
         }
     }
 }
