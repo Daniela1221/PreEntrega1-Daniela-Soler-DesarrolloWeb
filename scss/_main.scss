@@ -96,13 +96,13 @@ main {
     main {
         /* Formatos textos */
         .parrafoMargen {
-            margin: 0;   
+            @include margenes(0,0,0,0);   
         } 
         .anchoFormulario {
             width: initial;
         }
         .parrafoMargenGrande {
-            margin: 0;
+            @include margenes(0,0,0,0);   
         }
         /* Formato imágenes */
         .tamanioImagenMediana {
